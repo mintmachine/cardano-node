@@ -3,7 +3,7 @@ FROM allanhart/cardano-node:latest
 # ------------------------------------------------------------------------------
 # Update package repository and upgrade to latest build
 # ------------------------------------------------------------------------------
-#RUN apt update -y && apt upgrade -y
+RUN apt update -y && apt upgrade -y && apt install build-essential -y
 
 # ------------------------------------------------------------------------------
 # Run the node as a non-root user
