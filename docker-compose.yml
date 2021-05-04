@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   relay:
-    container_name: relay_1
+    container_name: cardano_relay
     build: .
     env_file:
       - ./.env
