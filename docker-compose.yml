@@ -12,11 +12,6 @@ services:
       - ${DATA_PATH}:/data
       - ${IPC_PATH}:/ipc
       - ${CONFIG_PATH}:/config
+      - ${LOG_PATH}:/log
     restart: on-failure
-    logging:
-      driver: "json-file"
-      options:
-        compress: "true"
-        max-file: "10"
-        max-size: "50m"
     entrypoint: /home/cardano/start-relay.sh
