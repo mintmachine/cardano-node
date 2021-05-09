@@ -84,13 +84,7 @@
   ],
   "setupScribes": [
     {
-      "scFormat": "ScText",
-      "scKind": "StdoutSK",
-      "scName": "stdout",
-      "scRotation": null
-    },
-    {
-      "scFormat": "ScText",
+      "scFormat": "ScJson",
       "scKind": "FileSK",
       "scName": "/log/testnet.log"
     }
